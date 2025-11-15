@@ -1,0 +1,15 @@
+{
+  "name": "gn-enterprise",
+  "version": "1.0.0",
+  "description": "GN Enterprise Website",
+  "scripts": {
+    "dev": "vercel dev"
+  },
+  "dependencies": {
+    "nodemailer": "^6.9.8"
+  },
+  "devDependencies": {
+    "@vercel/node": "^3.0.7"
+  }
+}
+

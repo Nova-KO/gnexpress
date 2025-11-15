@@ -20,3 +20,8 @@ Thumbs.db
 *.bak
 *.cache
 
+# Vercel
+.vercel
+
+# Node modules
+node_modules/

@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "rewrites": [
+    {
+      "source": "/api/send-mail",
+      "destination": "/api/send-mail.js"
+    },
+    {
+      "source": "/api/upload",
+      "destination": "/api/upload.js"
+    }
+  ]
+}
+

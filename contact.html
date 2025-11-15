@@ -280,14 +280,14 @@ Hong Kong.</h6>
 			$('#submitbtn').html('<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> Submitting...');
             dataString = $('#registration').serialize();
             $.ajax({
-                    url: "send_mail.php",
+                    url: "/api/send-mail",
                     type: "POST",
                     data: $('#contactForm').serialize(),
                     success: function(response) {
                         $("#responseMessage").html('<div class="alert alert-success">'+response+'</div>');
                     },
                     error: function() {
-                        $("#responseMessage").html('<div class="alert alert-danger">'+response+'</div>');
+                        $("#responseMessage").html('<div class="alert alert-danger">Something went wrong!</div>');
                     }
                 }); 
      }

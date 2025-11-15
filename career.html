@@ -285,7 +285,7 @@
                   var form = document.getElementById('uploadForm');
                   var formData = new FormData(form);
                 $.ajax({
-                    url: "upload.php",
+                    url: "/api/upload",
                     type: "POST",
                     data: formData,
                     contentType: false,
@@ -301,8 +301,11 @@
                         } else {
                             //debugger;
                            // $("#responseMessage").text("❌ Error: " + res.error);
-                            $("#responseMessage").html('<div class="alert alert-danger">' + res.error + '</div>');
+                            $("#responseMessage").html('<div class="alert alert-danger">' + (res.error || 'Something went wrong!') + '</div>');
                         }
+                    },
+                    error: function(xhr, status, error) {
+                        $("#responseMessage").html('<div class="alert alert-danger">Something went wrong! Please try again.</div>');
                     }
                 });
            
