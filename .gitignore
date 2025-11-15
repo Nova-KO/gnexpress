@@ -1,0 +1,22 @@
+# Uploads and user-generated content
+uploads/
+*.log
+error_log
+
+# OS files
+.DS_Store
+.Trash/
+Thumbs.db
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Temporary files
+*.tmp
+*.bak
+*.cache
+

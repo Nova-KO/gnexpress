@@ -1,0 +1,315 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>GN Enterprise</title>
+    <meta charset="utf-8">
+    <link rel="icon" href="favicon.png" type="image/png" sizes="16x16">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+</head>
+
+<body>
+
+    <main class="site-main">
+        <!-- Header-->
+        <header class="site-header">
+            <div class="container">
+                <div class="header-item-holder d-flex justify-content-between align-items-center">
+                    <div class="logo-holder text-center">
+                       <a href="index.html"> <img src="img/logo.svg" alt=""></a>
+                    </div>
+                    <div class="main-menu-holder">
+                        <div class="container d-flex justify-content-center">
+                            <nav class="navbar navbar-expand-md">
+                                <div class="container-fluid">
+                                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#main_nav" aria-expanded="false" aria-label="Toggle navigation">
+                                        <span class="navbar-toggler-icon">
+                                            <span class="line"></span>
+                                            <span class="line"></span>
+                                            <span class="line"></span>
+                                        </span>
+                                    </button>
+                                    <div class="collapse navbar-collapse" id="main_nav">
+
+
+                                         <ul class="navbar-nav">
+                                            <li class="nav-item active"> <a class="nav-link" href="index.html">HOME </a> </li>
+                                            <li class="nav-item dropdown">
+                                                <a class="nav-link dropdown-toggle" href="#"
+                                                    data-bs-toggle="dropdown">WHO WE ARE</a>
+                                                <ul class="dropdown-menu">
+                                                    <li><a class="dropdown-item" href="about.html">ABOUT US</a></li>
+                                                    <li><a class="dropdown-item" href="our-business-spread.html"> OUR BUSINESS SPREAD  </a>
+                                                        
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="nav-item dropdown">
+                                                <a class="nav-link dropdown-toggle" href="#"
+                                                    data-bs-toggle="dropdown">OUR PRODUCTS </a>
+                                                <ul class="dropdown-menu">
+                                                    <li><a class="dropdown-item" href="food-products.html"> FOOD PRODUCTS </a>
+                                                       
+                                                    </li>
+                                                    <li><a class="dropdown-item" href="packing-material.html"> PACKING MATERIALS</a>
+                                                      
+                                                    </li>
+                                                </ul>
+                                            </li>
+
+                                            <li class="nav-item"><a class="nav-link" href="sustainability.html"> SUSTAINABILITY </a></li>
+                                            <li class="nav-item dropdown">
+                                                <a class="nav-link dropdown-toggle" href="#"
+                                                    data-bs-toggle="dropdown">CONTACT US</a>
+                                                <ul class="dropdown-menu dropdown-menu-left">
+                                                    <li><a class="dropdown-item" href="career.html"> CAREER </a></li>
+                                                    <li><a class="dropdown-item" href="contact.html"> CONTACT US  </a>
+                                                        
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+
+                                    </div>
+                                </div>
+                            </nav>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Header End-->
+
+        <!-- Site Content-->
+        <section class="site-content">
+            <section class="site-section careers">
+                <div class="container">
+                    <div class="heading-holder text-center">
+                        <h6>Careers</h6>
+                        <h2> Build Your Future with Us!</h2>
+                        <p>We are always looking for passionate and talented individuals. Submit your details, and let's
+                            shape the future together!</p>
+                    </div>
+                    <div class="form-holder">
+                        <form id="uploadForm" enctype="multipart/form-data">
+                            <div class="form-item m-b-25">
+                                <label>First Name</label>
+                                <input type="text" class="form-control" placeholder="Enter your Name" value="" name="fname">
+                            </div>
+                            
+                             <div class="form-item m-b-25">
+                                <label>Last Name</label>
+                                <input type="text" class="form-control" placeholder="Enter your Last Name" value="" name="lname">
+                            </div>
+
+                            <div class="form-item m-b-25">
+                                <label>Email Address</label>
+                                <input type="email" class="form-control" placeholder="Enter your email" name="email">
+                            </div>
+
+                            <div class="form-item m-b-25">
+                                <label>Mobile Number</label>
+                                <input type="text" class="form-control" placeholder="Enter mobile number" Name="mobile">
+                            </div>
+
+                           
+
+
+                            <div class="form-item m-b-25">
+
+                                <div class="upload-btn-wrapper">
+                                    <button class="btn"><img src="img/upload.svg" alt="">
+                                        <p>Click and Upload your resume</p>
+                                    </button>
+                                    <input type="file" name="file" id="fileInput" />
+                                </div>
+                            </div>
+
+                            <div class="form-item m-b-25">
+                                <span id="filename"></span>
+                                <!--<div class="status-holder">
+                                   
+                                </div>-->
+                                <div id="progressBar"><div>0%</div></div>
+                                   
+                                   <input type="hidden" name="fileData" id="hiddenFileData">
+        <input type="hidden" name="fileName" id="hiddenFileName">
+                            </div>
+
+                            <div class="form-item m-b-25">
+<label>About yourself in brief</label>
+                                <textarea class="form-control" rows="5" name="message" placeholder="About yourself in brief"></textarea>
+                            </div>
+                            <div class="">
+                                <button type="submit" class="btn-fill w-100">Submit Application <img src="img/arrow-right-white.svg"></button>
+                            </div>
+                            <div id="responseMessage"></div>
+
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </section>
+        <!-- Site Content End-->
+
+        <!-- Site Footer-->
+        <footer class="site-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-5 footer-item">
+                        <img src="img/footer-logo.png" alt="" class="m-b-30">
+                        <p>Your Trusted Partner in Agricultural Trading, connecting you with high-quality agricultural
+                            products sourced directly from farms across Africa.</p>
+
+                        <!--<ul class="social-media">
+                            <li><a href="#"><img src="img/fb.svg" alt=""></a></li>
+                            <li><a href="#"><img src="img/tw.svg" alt=""></a></li>
+                            <li><a href="#"><img src="img/ins.svg" alt=""></a></li>
+                        </ul>-->
+                    </div>
+                    <div class="col-lg-3 footer-item footer-menu">
+                        <h6 class="footer-head color-green">Quick Links</h6>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="food-products.html">Food Products</a></li>
+                            <li><a href="jute-bags.html">Packing Materials</a></li>
+                            <li><a href="contact.html">Contact us</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-4 footer-item footer-address">
+                        <h6 class="footer-head color-green">Contact us</h6>
+                        <div class="d-flex align-items-center">
+                            <img src="img/location.svg" alt="" class="m-r-5">
+                            <p>Gn Enterprise Limited Unit 1101b 11/f, Lippo Sun Plaza, 28 Canton Road, Tsim Sha Tsui Kowloon, Hong Kong.</p>
+                        </div>
+
+                        <div class="d-flex align-items-center">
+                            <img src="img/mail.svg" alt="" class="m-r-5">
+                            <p class="m-0"> info@gnenterpriseworld.com</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </footer>
+        <!-- Site Footer End-->
+
+    </main>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/owl.carousel.js"></script>
+    <script src="js/menu.js"></script>
+      <script src="js/jquery.validate.js"></script>
+    <script>
+        $('.slider').owlCarousel({
+            dots: true,
+            loop: true,
+            items: 1,
+            margin: 0,
+            smartSpeed: 450,
+            autoplay: true,
+            autoplayTimeout: 5000,
+            autoplayHoverPause: false
+        });
+   
+
+
+
+ $("#fileInput").on("change", function(event) {
+                let file = event.target.files[0];
+                if (!file) return;
+
+                let reader = new FileReader();
+
+                // Show progress bar
+                $("#progressBar").show();
+                reader.onprogress = function(event) {
+                    if (event.lengthComputable) {
+                        let percent = Math.round((event.loaded / event.total) * 100);
+                        $("#progressBar div").css("width", percent + "%").text(percent + "%");
+                    }
+                };
+
+                // Store file as Base64 in a hidden input
+                reader.onload = function(event) {
+                    $("#hiddenFileData").val(event.target.result);  // Store Base64
+                    $("#hiddenFileName").val(file.name);
+                    $('#filename').html(file.name);
+                    $("#progressBar div").css("width", "100%").text("100%");
+                };
+
+                reader.readAsDataURL(file); // Convert to Base64
+            });
+            
+            
+    
+      $("#uploadForm").validate({
+            rules: {
+                email: {
+                required: true,
+                email: true
+                },
+                fname:{required: true},
+                lname:{required: true},
+                phone:{required: true},
+                file:{required: true}
+            },
+            messages: {
+            email: {
+                required: "Please enter Email",
+                email: "Please enter a valid email address",
+            }
+    },highlight: function(element) {
+        $(element).addClass('is-invalid');
+    },
+    unhighlight: function(element) {
+        $(element).removeClass('is-invalid').addClass('is-valid');
+        $(element).next('div').removeClass('invalid-feedback').addClass('valid-feedback').html('Looks good!');
+    },errorPlacement: function (error, element) {
+         
+
+            element.next('div').addClass('invalid-feedback').html(error[0].outerText);
+            
+            
+        },
+            submitHandler: function(form) {
+               
+			$('#submitbtn').html('<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> Submitting...');
+                  var form = document.getElementById('uploadForm');
+                  var formData = new FormData(form);
+                $.ajax({
+                    url: "upload.php",
+                    type: "POST",
+                    data: formData,
+                    contentType: false,
+                    processData: false,
+                    dataType:'json',
+                    success: function(res) {
+         
+                        if (res.success) {
+                            //debugger;
+                            $("#responseMessage").html('<div class="alert alert-success">Application Submitted Successfully</div>');
+                            $("#uploadForm")[0].reset();
+                            $("#progressBar").hide();
+                        } else {
+                            //debugger;
+                           // $("#responseMessage").text("❌ Error: " + res.error);
+                            $("#responseMessage").html('<div class="alert alert-danger">' + res.error + '</div>');
+                        }
+                    }
+                });
+           
+                
+            }
+});
+
+    </script>
+
+</html>
